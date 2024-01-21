@@ -1,14 +1,14 @@
-import { Router } from "express";
+import { Response, Router } from "express";
 import {
   generateTokenCard,
   getCard,
 } from "../controllers/tokenizedCard.controller";
-import { checkPkTest } from "../middlewares/checks.middleware";
+import { checkPkTest, checkValidToken } from "../middlewares/checks.middleware";
 import { validateTokenization } from "../validators/tokenizedCard";
 
 const router = Router();
 
-router.get("/getCard", getCard);
+router.get("/getCard", checkValidToken, getCard);
 router.post(
   "/generateToken",
   checkPkTest,

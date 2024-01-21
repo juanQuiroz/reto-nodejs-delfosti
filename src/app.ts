@@ -10,3 +10,5 @@ app.use(express.json());
 app.use(router);
 db().then(() => console.log("DB Connected"));
 app.listen(PORT, () => console.log(`Server running in port ${PORT}`));
+
+export default app;
