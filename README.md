@@ -34,13 +34,15 @@ yarn install
 docker-compose up -d
 ```
 
-##### 5. run dev script
+##### 5. create a new file called _.env_ and copy data from _.env.example_ file
+
+##### 6. run dev script
 
 ```bash
 yarn dev
 ```
 
-##### 6. run test script
+##### 7. run test script
 
 ```bash
 yarn test
