@@ -1,5 +1,5 @@
 import { check } from "express-validator";
-import { validateResult } from "../helpers/validate";
+import { validateResult } from "../utils/validate";
 import { NextFunction, Request, Response } from "express";
 
 const allowedDomains = ["gmail.com", "hotmail.com", "yahoo.es"];
